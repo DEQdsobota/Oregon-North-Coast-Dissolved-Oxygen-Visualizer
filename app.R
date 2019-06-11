@@ -1,3 +1,11 @@
+# June 11, 2019
+
+# North Coast Dissolved Oxygen Shiny App
+
+# First developed by Anna Withington, continued by Dan Sobota and Yuan Grund, ODEQ
+
+# Load required libraries-------------------------------------
+
 library(shiny)
 library(leaflet)
 library(ggplot2)
