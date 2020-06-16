@@ -1,6 +1,6 @@
 # North Coast Continuous Dissolved Oxygen Visualizer
 
-This app is to help visualize dissolved oxygen data around 14 sampling locations in Oregon's North Coast region over the span of about a decade.
+This app is to help visualize dissolved oxygen data from rivers and estuaries in Oregon's North Coast region over the past decade.
 
 
 ## Usability
@@ -13,9 +13,7 @@ This is especially true of some of the Plotly functionality on the "Display Cont
 
 ## Data sources
 
-Right now, the app brings in data from three locations: AWQMS, LASAR, and Excel, that was preprocessed and collected in a file "ShinyAllData.Rdata." The LASAR data should now reside entirely in the AWQMS database, so this could be revised by querying AWQMS in the future. Entries that were nearly duplicate were typically left in to improve transparency.
-
-Two sites originally present in the Excel data were excluded because they have not been assigned LASAR/MLocIDs and this is was important for coding the sites in the app. These sites may receive codes in the future.
+Right now, the app brings in data from AWQMS in a flat file "ShinyAllData.Rdata." We are working toward linking the app dynamically with ODEQ's AWQMS database with internal R servers in the near future.
 
 
 ## Data prep
@@ -56,6 +54,4 @@ Here are some of the next steps scheduled for the app:
 
 ## Known bugs and issues
 
-+ The plotly selection-to-plot option on the "Display Continuous Data" tab recently stopped working in some circumstances. It seemed as though it might be because of a plotly update, but I wasn't able to track it down in time. It seems that if there are only points that meet criteria, the "Count" plot to the right may not generate properly.
-
-This could potentially be addressed through a revision of plotly and/or a revision of the process that takes the plotly selection and creates the new plot with the data.
++ Non known at the current time (June 2020)
